@@ -8,6 +8,7 @@
     <meta name="author" content="Joshua Chapman">
     <meta name="description" content="main page">
     <link rel="stylesheet" type="text/css" href="styles/base.css"/>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,19 +23,27 @@
         </nav>
     </header>
     <main>
-        <section class="card">
+        <section class="card double">
             <h3 class="card-header">About Me</h3>
-            <p>My name is Josh. I grew up in Utah, moved to Washington for 2 years, and now am attending college in Rexburg Idaho. I like to read, play pickleball, and be outside. Anytime I can be with friends, that's where I want to be.</p>
-            <img src="images/subject_at_tetons.png" height="300px">
-
+            <section class="card-content">
+                <p class="triple up_and_down">My name is Josh. I grew up in Utah, moved to Washington for 2 years, and now am attending college in Rexburg Idaho. I like to read, play pickleball, and be outside. Anytime I can be with friends, that's where I want to be.</p>
+                <img class="double" src="images/subject_at_tetons.png" height="300px">
+                <h4 class="span_all">Favorite Quote</h4>
+                <hr class="solid span_all">
+                <p class="span_all">Allowing pride to enter into our hearts can cause us to mock that which is sacred; disbelieve in the spirit of prophecy and revelation; trample under our feet the commandments of God; deny the word of God; cast out, mock, and revile against the prophets; and forget the Lord our God and “not desire that the Lord [our] God, who hath created [us], should rule and reign over [us].”</p>
+                <p class="span_all">Therefore, if we are not faithful and obedient, we can transform the God-given blessing of prosperity into a prideful curse that diverts and distracts us from eternal truths and vital spiritual priorities. We always must be on guard against a pride-induced and exaggerated sense of self-importance, a misguided evaluation of our own self-sufficiency, and seeking self instead of serving others.</p>
+                <p class="span_all justify_right">- Elder David A. Bednar</p>
+            </section>
         </section>
-        <section class="card">
+        <section class="card single">
             <h3 class="card-header">Web Dev Resources</h3>
-            <ul>
-                <li><a href="https://www.w3schools.com/html/html_intro.asp">W3 Schools</a></li>
-                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
-            </ul>
+            <section class="card-content">
+                <ul class="span_all">
+                    <li><a href="https://www.w3schools.com/html/html_intro.asp">W3 Schools</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                </ul>
+            </section>
         </section>
     </main>
     <footer>
