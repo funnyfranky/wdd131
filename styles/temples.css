@@ -37,6 +37,10 @@ header img {
 nav {
     background-color: rgb(6, 97, 6);
     margin: 0 auto;
+    display: none;
+}
+nav.show {
+    display: block;
 }
 nav ul {
     list-style: none;
@@ -81,4 +85,7 @@ h2 {
 }
 figure {
     margin-bottom: 10px;
+}
+#hamburger_button {
+    display: block;
 }

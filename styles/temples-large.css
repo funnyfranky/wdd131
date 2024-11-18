@@ -1,4 +1,7 @@
 @media screen and (min-width: 640px) {
+    nav {
+        display: block;
+    }
     nav ul {
         display:flex;
         justify-content: space-between;
@@ -6,6 +9,9 @@
     }
     .photo_grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    #hamburger_button {
+        display: none;
     }
 
 }
