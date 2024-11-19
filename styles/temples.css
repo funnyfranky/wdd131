@@ -50,7 +50,7 @@ nav a {
     justify-content: center;
     text-decoration: none;
     color: white;
-    padding: 0.5rem;
+    padding: 0.5rem 3rem;
 }
 nav a:hover {
     background-color: rgb(10, 138, 10);
@@ -88,4 +88,7 @@ figure {
 }
 #hamburger_button {
     display: block;
+}
+#nav_bar_two {
+    display: none;
 }

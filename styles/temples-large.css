@@ -4,7 +4,7 @@
     }
     nav ul {
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
         list-style: none;
     }
     .photo_grid {
@@ -13,12 +13,23 @@
     #hamburger_button {
         display: none;
     }
+    #nav_bar_two {
+        display: none;
+    }
 
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 897px) {
     .photo_grid {
         max-width: 1000px;
         grid-template-columns: repeat(3, 1fr);
+    }
+    #nav_bar_two {
+        display: block;
+        background-color: #050092;
+        margin: 0;
+    }
+    #nav_bar {
+        display:none;
     }
 }
