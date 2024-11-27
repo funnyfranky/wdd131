@@ -7,9 +7,9 @@
     --sixth-color: #1c2c34;
 
     --header-on-light-background: var(--primary-color);
-    --header-on-dark-background: var(--secondary-color);
     --paragraph-on-light-background: var(--sixth-color);
-    --paragraph-on-dark-background: var(--fourth-color);
+    --header-on-dark-background: var(--secondary-color);
+    --paragraph-on-dark-background: var(--fifth-color);
 }
 
 * {
@@ -22,11 +22,65 @@ header {
     background-color: var(--primary-color);
 }
 
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--fourth-color);
+}
+
+.full_screen img {
+    width: 100%;
+}
+
+.centered {
+    display: block;
+    margin: 0 auto;
+}
+
 h1 {
     color: var(--header-on-dark-background);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 5rem;
 }
 
 main {
-
+    color: var(--paragraph-on-light-background);
 }
 
+section {
+    border: black solid 1px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.section_header {
+    display: flex;
+    justify-content: center;
+}
+
+.grid_table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.text_align_left {
+    text-align: left;    
+}
+.text_align_right {
+    text-align: right;
+}
+
+#weather_icon {
+    max-width: 75px;
+}
+
+/* from other documents */
+footer {
+    color:#eee;
+    background-color: #050092;
+    text-align: center;
+    padding: 20px;
+}

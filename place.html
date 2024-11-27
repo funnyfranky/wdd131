@@ -8,23 +8,63 @@
     <meta name="author" content="Joshua Chapman">
     <meta name="description" content="">
     <link rel="stylesheet" href="styles/place.css">
-    <link rel="styles" href="scripts/place.js" defer>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>Vermont</h1>
+        <picture class="full_screen">
+            <source media="(min-width: 1001px)" srcset="images/vermontHeroSmall.webp">
+            <source media="(min-width: 800px)" srcset="images/vermontHeroSmall.webp">
+            <img src="images/vermontHeroSmall.webp" alt="">
+        </picture>
     </header>
     <main>
-        <picture>
-            <source media="(min-width: )" srcset=".webp">
-            <source media="(min-width: )" srcset=".webp">
-            <img src=".webp" alt="">
-        </picture>
 
+        <section>
+            <h3 class="section_header">Data</h3>
+            <div class="grid_table">
+                <p class="text_align_right">    Area:</p>
+                <p class="text_align_left">     Value</p>
+                <p class="text_align_right">    Population:</p>
+                <p class="text_align_left">     Value</p>
+                <p class="text_align_right">    Capital:</p>
+                <p class="text_align_left">     Value</p>
+                <p class="text_align_right">    Languages:</p>
+                <p class="text_align_left">     Value</p>
+                <p class="text_align_right">    Currency:</p>
+                <p class="text_align_left">     Value</p>
+                <p class="text_align_right">    Time Zone:</p>
+                <p class="text_align_left">     Value</p>
+                <p class="text_align_right">    Calling Code:</p>
+                <p class="text_align_left">     Value</p>
+                <p class="text_align_right">    Internet TLD:</p>
+                <p class="text_align_left">     Value</p>
+            </div>
+        </section>
+        <section>
+            <h3 class="section_header">Weather</h3>
+            <img id="weather_icon" class="centered" src="images/cloudy.png" alt="thermometer art">
+            <div class="grid_table">
+                <p class="text_align_right">Temperature:</p>
+                <p class="text_align_left">Value</p>
+                <p class="text_align_right">Conditions:</p>
+                <p class="text_align_left">Value</p>
+                <p class="text_align_right">Wind:</p>
+                <p class="text_align_left">Value</p>
+                <p class="text_align_right">Wind Chill:</p>
+                <p class="text_align_left">Value</p>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <p>
+            <span id="currentyear"></span>
+            Josh Chapman Idaho USA
+        </p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
