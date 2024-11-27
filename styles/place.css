@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #047f3c;
+    --secondary-color: #f9d640;
+    --third-color: #f5a230;
+    --fourth-color: #b0c892;
+    --fifth-color: #84847c;
+    --sixth-color: #1c2c34;
+
+    --header-on-light-background: var(--primary-color);
+    --header-on-dark-background: var(--secondary-color);
+    --paragraph-on-light-background: var(--sixth-color);
+    --paragraph-on-dark-background: var(--fourth-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+h1 {
+    color: var(--header-on-dark-background);
+}
+
+main {
+
+}
+
