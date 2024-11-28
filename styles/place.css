@@ -23,7 +23,7 @@ header {
 }
 
 body {
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
     background-color: var(--fourth-color);
 }
@@ -41,11 +41,13 @@ h1 {
     color: var(--header-on-dark-background);
     display: flex;
     justify-content: center;
-    padding: 2rem 5rem;
+    padding: 1rem 5rem;
+    font-size: 3rem;
 }
 
 main {
     color: var(--paragraph-on-light-background);
+    font-size: 1.5rem;
 }
 
 section {
@@ -83,4 +85,31 @@ footer {
     background-color: #050092;
     text-align: center;
     padding: 20px;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 640px) {
+    picture img {
+        display: none;
+    }
+    main:after {
+        content:url("../images/vtLargeHero1080.jpg");
+        grid-area: 1/5/4/1;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* max-width: 100%; */
+        overflow: hidden;
+    }
+    #data_box {
+        grid-area: 1/3/2/1;
+        z-index: 1;
+        background-color: whitesmoke;
+    }
+    #weather_box {
+        grid-area: 3 / 5 / 4 / 3;
+        z-index: 1;
+        background-color: whitesmoke;
+    }
 }
