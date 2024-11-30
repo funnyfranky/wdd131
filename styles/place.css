@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -92,7 +93,7 @@ footer {
     picture img {
         display: none;
     }
-    main:after {
+    main::after {
         content:url("../images/vtLargeHero1080.jpg");
         grid-area: 1/5/4/1;
     }
