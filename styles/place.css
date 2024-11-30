@@ -94,7 +94,7 @@ footer {
         display: none;
     }
     main::after {
-        content:url("../images/vtLargeHero1080.jpg");
+        content:url("../images/vtLargeHero1080.webp");
         grid-area: 1/5/4/1;
     }
     main {
