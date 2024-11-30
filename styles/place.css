@@ -113,4 +113,8 @@ footer {
         z-index: 1;
         background-color: whitesmoke;
     }
+    h3::after {
+        content: url("../images/rainy.svg");
+        z-index: 0;
+    }
 }
