@@ -113,8 +113,23 @@ footer {
         z-index: 1;
         background-color: whitesmoke;
     }
-    h3::after {
-        content: url("../images/rainy.svg");
-        z-index: 0;
+
+    #weather_icon {
+        display:none;
+    }
+
+    #title_box {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+    }
+
+    #weather_box #title_box::after {
+        content: url('../images/rainy_cropped.svg'); /*  */
+        padding: 0;
+        width: 75px;
+        height:75px;
+        
     }
 }
