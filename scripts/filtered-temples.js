@@ -122,11 +122,59 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function displayTemples(temples) {
         const container = document.getElementById('temple_pics');
+        container.innerHTML = '';
         temples.forEach(temple => {
             const card = createTempleCard(temple);
             container.appendChild(card);
         });
     }
+    function filterOld(temples, year) {
+        return temples.filter(temple => {
+            const dedicatedYear = new Date(temple.dedicated).getFullYear();
+            return dedicatedYear < year;
+        });
+    }
+    function filterNew(temples, year) {
+        return temples.filter(temple => {
+            const dedicatedYear = new Date(temple.dedicated).getFullYear();
+            return dedicatedYear > year;
+        });
+    }
+    function filterLarge(temples, size) {
+        return temples.filter(temple => {
+            return temple.area > size;
+        });
+    }
+    function filterSmall(temples, size) {
+        return temples.filter(temple => {
+            return temple.area < size;
+        });
+    }
 
     displayTemples(temples);
+    
+    document.getElementById("showAll").addEventListener('click', function() {
+        displayTemples(temples);
+    });
+
+    document.getElementById("old").addEventListener('click', function() {
+        const filteredTemples = filterOld(temples, 1900);
+        displayTemples(filteredTemples);
+    });
+    
+    document.getElementById("new").addEventListener('click', function() {
+        const filteredTemples = filterNew(temples, 2000);
+        displayTemples(filteredTemples);
+    });
+
+    document.getElementById("large").addEventListener('click', function() {
+        const filteredTemples = filterLarge(temples, 90000);
+        displayTemples(filteredTemples);
+    });
+
+    document.getElementById("small").addEventListener('click', function() {
+        const filteredTemples = filterSmall(temples, 10000);
+        displayTemples(filteredTemples);
+    });
+
 });
