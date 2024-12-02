@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: fit-content;
+    margin: 15px auto 0 auto;
+    background-color: rgb(237, 237, 237);
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    caption {
+        caption-side: bottom;
+        font-size: smaller;
+        padding: 0.5rem;
+    }
+
+    th,
+    td {
+        padding: 0.5rem 1rem;
+        border: 1px solid black;
+        white-space: pre;
+        text-align: center;
+    }
+
+    thead {
+        background-color: yellow;
+        color: #000;
+
+        th:first-child {
+            background-color: rgb(12, 128, 25);
+            color: #fff;
+        }
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: lightblue;
+    }
+
+
+}
