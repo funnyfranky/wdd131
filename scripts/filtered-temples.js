@@ -177,4 +177,28 @@ document.addEventListener('DOMContentLoaded', function () {
         displayTemples(filteredTemples);
     });
 
+    document.getElementById("showAll1").addEventListener('click', function() {
+        displayTemples(temples);
+    });
+
+    document.getElementById("old1").addEventListener('click', function() {
+        const filteredTemples = filterOld(temples, 1900);
+        displayTemples(filteredTemples);
+    });
+    
+    document.getElementById("new1").addEventListener('click', function() {
+        const filteredTemples = filterNew(temples, 2000);
+        displayTemples(filteredTemples);
+    });
+
+    document.getElementById("large1").addEventListener('click', function() {
+        const filteredTemples = filterLarge(temples, 90000);
+        displayTemples(filteredTemples);
+    });
+
+    document.getElementById("small1").addEventListener('click', function() {
+        const filteredTemples = filterSmall(temples, 10000);
+        displayTemples(filteredTemples);
+    });
+
 });
