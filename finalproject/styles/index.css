@@ -1,8 +1,100 @@
+:root {
+    --primary-color: #596B70;
+    --primary2: #9EA6A8;
+    --primary3: #758387;
+    --primary4: #42565B;
+    --primary5: #293B3F;
+
+    --secondary-color: #5F6A76;
+    --secondary2: #A5AAAF;
+    --secondary3: #7D858E;
+    --secondary4: #475360;
+    --secondary5: #2D3743;
+
+    --tertiary-color: #B4A58F;
+    --tertiary2: #FFF9EF;
+    --tertiary3: #DACEBD;
+    --tertiary4: #938269;
+    --tertiary5: #665841;
+
+    --complimentary-color: #B4A18F;
+    --complimentary2: #FFF7EF;
+    --complimentary3: #DACBBD;
+    --complimentary4: #937E69;
+    --complimentary5: #665441;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background-color: rgb(255, 255, 175);
+    background-color: var(--secondary5);
+}
+
+header {
+    background-color: var(--primary2);
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+        color: var(--primary5);
+    }
+
+    nav {
+        margin: .3rem 0;
+        /* display: none; */
+
+        ul {
+            list-style-type: none;
+
+            li {
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: var(--complimentary5);
+                    padding: .5rem 0;
+                    margin: 0 auto;
+                }
+            }
+
+            li:hover {
+                background-color: var(--complimentary3);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 3rem;
+
+        nav {
+            min-width: 60%;
+            margin: auto 0;
+
+            ul {
+
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    padding: 1rem 2rem;
+                }
+
+                a:hover {
+                    background-color: var(--tertiary3);
+
+                }
+            }
+        }
+    }
 }
