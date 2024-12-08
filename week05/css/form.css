@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*----------- HEADER --------------*/
+header {
+    h1 {
+        background-color: rgb(0, 0, 56);
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem 2%;
+    }
+}
+
+/*----------- FORM STYLING --------------*/
+.wf1 {
+    background-color: rgb(211,205,212);
+    margin: 0;
+    padding: 1rem 2%;
+
+    div {
+        padding-top: 1rem;
+    }
+
+    label,
+    div {
+        font-size: .9rem;
+    }
+
+    select,
+    input[type="date"],
+    input[type="text"],
+    input[type="textbox"]
+     {
+        display: block;
+        padding: .5rem 1rem;
+        width: 100%;
+        max-width: 400px;
+        appearance: none;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: .5rem;
+    }
+
+    input[type="submit"] {
+        border: solid 1px black;
+        background-image: linear-gradient(rgb(100, 175, 100), green);
+        background-color: white;
+        color: whitesmoke;
+        padding: 1rem;
+        width: 100%;
+        max-width: 400px;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .label {
+        padding-top: 1rem;
+    }
+
+    #writtenReview {
+        height: 150px;
+    }
+    input:required {
+        border-right: solid 10px red;
+    }
+    input:required:valid {
+        border-right: solid 10px green;
+    }
+}
+/*----------- FOOTER --------------*/
+/* from other documents */
+footer {
+    color:#eee;
+    background-color: #050092;
+    text-align: center;
+    padding: 20px;
+}

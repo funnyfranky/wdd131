@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="css/form.css">
+    <meta name="author" content="Josh Chapman">
+    <meta name="title" content="Product Review">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="js/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="thanks.html" method="get" class="wf1">
+            <label class="label">
+                Product Name*
+                <select name="productName" id="prodname" required disabled>
+                    <option value="" selected>Select a Product...</option>
+                </select>
+            </label>
+
+            <div class="label">Overall Rating*</div>
+            <label><input type="radio" name="starCount" value="oneStar" required>&star;</label><br>
+            <label><input type="radio" name="starCount" value="twoStar">&star;&star;</label><br>
+            <label><input type="radio" name="starCount" value="threeStar">&star;&star;&star;</label><br>
+            <label><input type="radio" name="starCount" value="fourStar">&star;&star;&star;&star;</label><br>
+            <label><input type="radio" name="starCount" value="fiveStar">&star;&star;&star;&star;&star;</label><br>
+
+            <label class="label"><div>Date of Installation*</div><input type="date" name="installDate" id="installDate" required></label>
+
+            <div class="label">Which features did you find useful in the product?<br><i>(Check all that apply)</i></div>
+            <label><input type="checkbox" id="" name="durability" value="yes">Durability</label><br>
+            <label><input type="checkbox" id="" name="easyUse" value="yes">Ease of Use</label><br>
+            <label><input type="checkbox" id="" name="performance" value="yes">Performance</label><br>
+            <label><input type="checkbox" id="" name="design" value="yes">Design</label><br>
+
+            <label class="label"><div>Written Review (Optional)</div><input type="text" name="writtenReview" id="writtenReview"></label>
+
+            <label class="label"><div>Your Name (Optional)</div><input type="text" name="fname" id="fullName"></label>
+
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p id="visit-count">loading..</p>
+        <p>
+            <span id="currentyear"></span>
+            Josh Chapman Idaho USA
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
