@@ -7,9 +7,13 @@
     <title>Product Review</title>
     <link rel="stylesheet" href="styles/form.css">
     <meta name="author" content="Josh Chapman">
-    <meta name="title" content="Product Review">
+    <meta name="description" content="Product Review">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +21,7 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        <form action="formSubmissionThanks.html" method="get" class="wf1">
+        <form action="review.html" method="get" class="wf1">
             <label class="label">
                 Product Name*
                 <select name="productName" id="prodname" required disabled>
@@ -32,7 +36,9 @@
             <label><input type="radio" name="starCount" value="fourStar">&star;&star;&star;&star;</label><br>
             <label><input type="radio" name="starCount" value="fiveStar">&star;&star;&star;&star;&star;</label><br>
 
-            <label class="label"><div>Date of Installation*</div><input type="date" name="installDate" id="installDate" required></label>
+            <label class="label">
+                <div>Date of Installation*</div><input type="date" name="installDate" id="installDate" required>
+            </label>
 
             <div class="label">Which features did you find useful in the product?<br><i>(Check all that apply)</i></div>
             <label><input type="checkbox" id="" name="durability" value="yes">Durability</label><br>
@@ -40,9 +46,14 @@
             <label><input type="checkbox" id="" name="performance" value="yes">Performance</label><br>
             <label><input type="checkbox" id="" name="design" value="yes">Design</label><br>
 
-            <label class="label"><div>Written Review (Optional)</div><input type="text" name="writtenReview" id="writtenReview"></label>
+            <label class="label">
+                <div>Written Review (Optional)</div><textarea name="writtenreview" id="writtenreview"
+                    rows="9"></textarea>
+            </label>
 
-            <label class="label"><div>Your Name (Optional)</div><input type="text" name="fname" id="fullName"></label>
+            <label class="label">
+                <div>Your Name (Optional)</div><input type="text" name="fname" id="fullName">
+            </label>
 
 
             <input type="submit" value="Post Review">

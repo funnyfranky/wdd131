@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Noto Sans, Calibri;
+}
+
 /*----------- HEADER --------------*/
 header {
     h1 {
@@ -33,7 +37,8 @@ header {
     select,
     input[type="date"],
     input[type="text"],
-    input[type="textbox"] {
+    input[type="textbox"],
+    textarea {
         display: block;
         padding: .5rem 1rem;
         width: 100%;
@@ -59,10 +64,6 @@ header {
 
     .label {
         padding-top: 1rem;
-    }
-
-    #writtenReview {
-        height: 150px;
     }
 
     input:required {
