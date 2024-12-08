@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /*----------- HEADER --------------*/
 header {
     h1 {
@@ -16,7 +17,7 @@ header {
 
 /*----------- FORM STYLING --------------*/
 .wf1 {
-    background-color: rgb(211,205,212);
+    background-color: rgb(211, 205, 212);
     margin: 0;
     padding: 1rem 2%;
 
@@ -32,8 +33,7 @@ header {
     select,
     input[type="date"],
     input[type="text"],
-    input[type="textbox"]
-     {
+    input[type="textbox"] {
         display: block;
         padding: .5rem 1rem;
         width: 100%;
@@ -64,17 +64,25 @@ header {
     #writtenReview {
         height: 150px;
     }
+
     input:required {
         border-right: solid 10px red;
     }
+
     input:required:valid {
         border-right: solid 10px green;
     }
+
 }
+
+#thanks {
+    margin: 2rem 1rem 5rem 1rem;
+}
+
 /*----------- FOOTER --------------*/
 /* from other documents */
 footer {
-    color:#eee;
+    color: #eee;
     background-color: #050092;
     text-align: center;
     padding: 20px;
