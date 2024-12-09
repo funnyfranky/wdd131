@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #1C1C1C;
+    --complimentary: #DADDD8;
+    --color3: #ECEBE4;
+    --color4: #EEF0F2;
+    --background-color: #FAFAFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Quicksand, Arial, sans-serif;
+}
+
+.nunito {
+    font-family: Nunito, Quicksand, sans-serif;
+}
+
+.quicksand {
+    font-family: Quicksand, Arial, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--color3);
+    padding: 1rem 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Nunito, Quicksand, sans-serif;
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+section {
+    margin: 2rem 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
+.grid * {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.grid #primary {
+    grid-column: 1 / 6;
+    background-color: #1C1C1C;
+    color: var(--color3);
+}
+
+.grid #color2 {
+    background-color: #DADDD8;
+    color: var(--primary-color)
+}
+
+.grid #color3 {
+    background-color: #ECEBE4;
+    color: var(--primary-color)
+}
+
+.grid #color4 {
+    background-color: #EEF0F2;
+    color: var(--primary-color)
+}
+
+.grid #color5 {
+    background-color: #FAFAFF;
+    color: var(--primary-color)
+}
