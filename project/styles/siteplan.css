@@ -2,8 +2,8 @@
     --primary-color: #1C1C1C;
     --complimentary: #DADDD8;
     --color3: #ECEBE4;
-    --color4: #EEF0F2;
-    --background-color: #FAFAFF;
+    --background-color: #EEF0F2;
+    --color4: #FAFAFF;
 }
 
 * {
@@ -13,8 +13,17 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--complimentary);
     font-family: Quicksand, Arial, sans-serif;
+    width: 100%;
+    max-width: 800px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+main {
+    background-color: var(--background-color);
+    width: 97%;
+    margin: 0 auto;
 }
 
 .nunito {
@@ -45,7 +54,7 @@ ul {
 }
 
 section {
-    margin: 2rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .grid {
@@ -83,4 +92,16 @@ section {
 .grid #color5 {
     background-color: #FAFAFF;
     color: var(--primary-color)
+}
+
+#wireframes img {
+    background-color: var(--complimentary);
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 2rem 0 2rem;
+}
+#wireframes img:last-child {
+    padding: 2rem;
 }
