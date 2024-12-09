@@ -20,6 +20,7 @@ body {
     min-width: 320px;
     margin: 0 auto;
 }
+
 main {
     background-color: var(--background-color);
     width: 97%;
@@ -95,13 +96,46 @@ section {
 }
 
 #wireframes img {
-    background-color: var(--complimentary);
     display: block;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem 2rem 0 2rem;
 }
-#wireframes img:last-child {
+
+#wireframes img:last-child,
+#wireframes img:nth-last-child(2) {
     padding: 2rem;
+}
+
+#wireframes h3 {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem 2rem .5rem 2rem;
+    background-color: var(--color4);
+    border-top: solid 1px var(--primary-color);
+    border-right: solid 1px var(--primary-color);
+    border-left: solid 1px var(--primary-color);
+}
+
+.photo-box {
+    display:grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: var(--complimentary);
+}
+
+#desktop-gallery,
+#desktop-drones,
+#desktop-contact {
+    grid-column: 1 / 5;
+}
+#mobile-gallery,
+#mobile-drones,
+#mobile-contact {
+    grid-column: 5 / 7;
 }
