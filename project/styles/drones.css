@@ -1,0 +1,40 @@
+.content-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white; /* Optional: for visual clarity */
+    padding: 1rem; /* Optional: for spacing inside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: for a card effect */
+    height: auto; /* Set a fixed height for all cards */
+}
+
+.imageBox {
+    max-height: 30%;
+    place-content: center;
+}
+
+.card img {
+    width: 100%;
+    align-self: center;
+}
+
+.card section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align the section at the bottom */
+    padding-top: 10px; /* Optional: spacing above the text */
+    text-align: center; /* Center the text horizontally */
+}
+
+
+/* @media screen and (min-width: 600px) {
+        
+} */
