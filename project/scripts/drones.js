@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const img = document.createElement("img");
         img.src = image.src;
         img.alt = image.alt;
+        img.loading = "lazy";
 
         // Create a section and header
         const section = document.createElement("section");

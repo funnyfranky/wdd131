@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const img = document.createElement("img");
         img.src = image.src;
         img.alt = image.alt;
+        img.loading = "lazy";
 
         // Create the caption element
         const caption = document.createElement("p");
