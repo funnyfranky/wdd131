@@ -73,14 +73,14 @@ header {
                     display: flex;
                     justify-content: center;
                     text-decoration: none;
-                    color: var(--primary4);
+                    color: var(--primary5);
                     padding: 1rem 0;
                     margin: 0 auto;
                 }
             }
 
             a:hover {
-                background-color: var(--complimentary3);
+                background-color: var(--complimentary-color);
                 border-radius: 10px;
             }
         }

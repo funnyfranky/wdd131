@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Create a section and header
         const section = document.createElement("section");
-        const header = document.createElement("h3");
+        const header = document.createElement("h2");
         header.textContent = image.heading;
 
         // Create the caption element
