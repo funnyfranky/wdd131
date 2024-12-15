@@ -1,0 +1,50 @@
+main {
+    margin: 2rem 0;
+}
+
+.section-head {
+    margin-left: 4rem;
+    color: var(--complimentary2);
+}
+
+#contact_form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary2);
+    color: var(--secondary4);
+    padding: 1rem 1.5rem;
+    margin: 1rem 3rem;
+    max-width: 800px;
+
+    label {
+        margin: 0 0 .2rem 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    button {
+        height: 40px;
+        font-size: x-large;
+        margin-bottom: 3rem;
+    }
+}
+
+#contact_form button {
+    margin-top: 3rem;
+}
+
+#contact_form textarea {
+    height: 400px;
+    font-size: large;
+}
+
+#contact_form *:invalid {
+    border-right: solid 5px red;
+}
+
+#contact_form input[type="name"]:valid,
+#contact_form textbox:valid {
+    border-right: solid 5px darkgreen;
+}
+
+    @media screen and (min-width: 700px) {}
